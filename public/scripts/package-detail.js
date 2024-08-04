@@ -9,12 +9,20 @@ axios
     console.log(packageData);
 
     const packageDetailsHtml = `
-      <h2>${packageData.title}</h2>
-      <p>${packageData.description}</p>
-      <p>Location: ${packageData.location}</p>
-      <p>Country: ${packageData.country}</p>
-      <p>Price: &#8377;${packageData.price}/ night</p>
-      <img src="${packageData.image.url}" alt="img" />
+      <div class="img">
+        <img src="${packageData.image.url}" alt="img" />
+      </div>
+      <div class="details">
+      <div>
+        <h2>${packageData.title}</h2>
+        
+        <p><span>Location:</span> ${packageData.location}</p>
+        <p><span>Country:</span> ${packageData.country}</p>
+        <p><span>Price:</span> &#8377;${packageData.price}/ night</p>
+        <p class="des">${packageData.description}</p>
+        </div>
+      </div>
+      
     `;
 
     const packageDetailsContainer = document.querySelector(".package-details");
