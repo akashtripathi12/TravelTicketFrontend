@@ -23,6 +23,8 @@
     <title>Contact Us</title>
 </head>
 <body>
+  
+  <!-- navbar -->
   <nav class="nav">
     <ul class="sidebar">
       <li onclick="hideSidebar()">
@@ -31,27 +33,38 @@
       <li>
         <a href="/TravelTicketFrontend/public/pages/about.html">About</a>
       </li>
-      <li><a href="#">Packages</a></li>
       <li>
-        <a href="/TravelTicketFrontend/public/pages/contact.html">Contact</a>
+        <a href="/TravelTicketFrontend/public/pages/packages.html"
+          >Packages</a
+        >
       </li>
       <li>
-        <a href="/TravelTicketFrontend/public/pages/login.html">Login</a>
+        <a href="/TravelTicketFrontend/public/pages/contact.html"
+          >Contact</a
+        >
       </li>
     </ul>
-    <ul>
+    <ul class="main-nav">
       <li>
-        <a href="/TravelTicketFrontend/index.html">Travel<span class="toor">Toor</span></a>
+        <a href="/TravelTicketFrontend/index.html" class="navbar-logo">
+          <img
+            src="/TravelTicketFrontend/assets/Travel-toor-logo-black.png"
+            alt="Travel Tour Logo"
+          />
+        </a>
       </li>
       <li class="hideonMobile">
         <a href="/TravelTicketFrontend/public/pages/about.html">About</a>
       </li>
-      <li class="hideonMobile"><a href="#">Packages</a></li>
       <li class="hideonMobile">
-        <a href="/TravelTicketFrontend/public/pages/contact.html">Contact</a>
+        <a href="/TravelTicketFrontend/public/pages/packages.html"
+          >Packages</a
+        >
       </li>
       <li class="hideonMobile">
-        <a href="/TravelTicketFrontend/public/pages/login.html">Login</a>
+        <a href="/TravelTicketFrontend/public/pages/contact.html"
+          >Contact</a
+        >
       </li>
       <li class="menu-btn" onclick="showSidebar()">
         <a><i class="fa-solid fa-bars-staggered"></i></a>
@@ -61,37 +74,39 @@
       </li>
     </ul>
   </nav>
-    <div class="hero" style="padding: 5rem; padding-top: 3rem; padding-bottom: 3rem;">
-      <h5 style="color: #ffa03f;">Need help?</h5>
-        <h1 style="text-decoration: underline #ffa03f; margin-bottom: 1rem;">Contact Us</h1>
-        <p style="opacity: 0.75;">Customer Service - real customer service - is one of our core values. So, we promise to go above and beyond to get what you need.</p>
-    </div>
-    <div class="cnt">
-        <div class="cntcard">
-            <i class="fa-solid fa-wrench"></i>
-            <h1>Customer Support</h1>
-            <h2>Providing exceptional customer service and personalized travel recommendations is our commitment. Reach out to us for 24/7 customer support</h2>
-            <h3>support@traveltoor.com</h3>
+  <hr />
+
+  <div class="child">
+    <main>
+      <div class="hero">
+        <h5>Need help?</h5>
+        <h1>Contact Us</h1>
+        <p >Queries, concerns or testimonials. We encourage you to send a note to us with your valuable feedback.
+          We will make sure to reply within 48 business hours. However, our response may take longer during an unforeseen period of high volume of inquiries.</p>
+      </div>
+      
+      <div class="container">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required>
+  
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+  
+            <label for="message">Message:</label>
+            <textarea id="message" rows="5" required></textarea>
+  
+            <button type="submit">SEND</button>
+        </form>
+        <div class="message" id="thankYouMessage">
+            Thank you for contacting us!
         </div>
-        <div class="cntcard">
-            <i class="fa-solid fa-cart-flatbed-suitcase"></i>
-            <h1>Sales</h1>
-            <h2>Unlock unforgettable journeys with our travel website: Your gateway to seamless bookings, personalized recommendations, and adventure</h2>
-            <h3>sales@traveltoor.com</h3>
-        </div>
-        <div class="cntcard">
-            <i class="fa-solid fa-envelope-open-text"></i>
-            <h1>General Enquiries</h1>
-            <h2>Get in touch with TravelTour</h2>
-            <h3>info@traveltoor.com</h3>
-        </div>
-        <div class="cntcard">
-            <i class="fa-regular fa-comments"></i>
-            <h1>Help Support</h1>
-            <h2>Check out our Help Centre by reaching us through e-mail</h2>
-            <h3>help@traveltoor.com</h3>
-        </div>
-    </div>
+      </div>
+    </main>
+  </div>
+    
+
     <footer>
       <div class="footer" id="footer">
         <div class="footer-content">
@@ -132,5 +147,28 @@
         </p>
       </div>
     </footer>
+    <script>
+      document.getElementById('contactForm').addEventListener('submit', function(event) {
+          event.preventDefault(); 
+          document.getElementById('thankYouMessage').style.display = 'block'; // Show thank you message
+          this.reset(); // Reset the form fields
+      });
+
+      //navbar
+function showSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.classList.add("show");
+  const body = document.querySelector(".body");
+  body.style.overflow = "hidden";
+}
+
+function hideSidebar() {
+  const sidebar = document.querySelector(".sidebar");
+  sidebar.classList.remove("show");
+  const body = document.querySelector(".body");
+  body.style.overflow = "";
+}
+  </script>
+
 </body>
 </html>
