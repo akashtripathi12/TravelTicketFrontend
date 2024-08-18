@@ -18,12 +18,13 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../styles/style.css">
     <link rel="stylesheet" href="../styles/about.css">
     <title>About Us</title>
 </head>
 <body>
-  <nav class="nav">
+  
+   <!-- navbar -->
+   <nav class="nav">
     <ul class="sidebar">
       <li onclick="hideSidebar()">
         <a><i class="fa-solid fa-xmark"></i></a>
@@ -31,27 +32,38 @@
       <li>
         <a href="/TravelTicketFrontend/public/pages/about.html">About</a>
       </li>
-      <li><a href="#">Packages</a></li>
       <li>
-        <a href="/TravelTicketFrontend/public/pages/contact.html">Contact</a>
+        <a href="/TravelTicketFrontend/public/pages/packages.html"
+          >Packages</a
+        >
       </li>
       <li>
-        <a href="/TravelTicketFrontend/public/pages/login.html">Login</a>
+        <a href="/TravelTicketFrontend/public/pages/contact.html"
+          >Contact</a
+        >
       </li>
     </ul>
-    <ul>
+    <ul class="main-nav">
       <li>
-        <a href="/TravelTicketFrontend/index.html">Travel<span class="toor">Toor</span></a>
+        <a href="/TravelTicketFrontend/index.html" class="navbar-logo">
+          <img
+            src="/TravelTicketFrontend/assets/Travel-toor-logo-black.png"
+            alt="Travel Tour Logo"
+          />
+        </a>
       </li>
       <li class="hideonMobile">
         <a href="/TravelTicketFrontend/public/pages/about.html">About</a>
       </li>
-      <li class="hideonMobile"><a href="#">Packages</a></li>
       <li class="hideonMobile">
-        <a href="/TravelTicketFrontend/public/pages/contact.html">Contact</a>
+        <a href="/TravelTicketFrontend/public/pages/packages.html"
+          >Packages</a
+        >
       </li>
       <li class="hideonMobile">
-        <a href="/TravelTicketFrontend/public/pages/login.html">Login</a>
+        <a href="/TravelTicketFrontend/public/pages/contact.html"
+          >Contact</a
+        >
       </li>
       <li class="menu-btn" onclick="showSidebar()">
         <a><i class="fa-solid fa-bars-staggered"></i></a>
@@ -61,41 +73,65 @@
       </li>
     </ul>
   </nav>
-    <div class="hero">
-        <h1>About Us</h1>
-        <p style="opacity: 0.75;">Welcome to Travel Toor, your ultimate gateway to unforgettable journeys around the globe. At Travel Toor, we believe that every trip should be an adventure filled with discovery, relaxation, and cultural immersion. Whether you're dreaming of relaxing on a pristine beach, exploring ancient ruins, or tasting exotic cuisines, we are here to make your travel dreams a reality. Our expert team curates the best destinations and experiences, ensuring that each journey with us is unique and enriching. Join us at Travel Toor and embark on a journey that will leave you with memories to cherish for a lifetime. Discover the world with us, one destination at a time.</p>
-        <img class="hikeimg" src="../../assets/Hiking.jpg""></img>
-        <div><img src="../../assets/plane.jpg" style="height: 10rem;"></div>
+  <hr />
+  <div class="child">
+    <main>
+      <div class="hero">
+        <div class="left">
+          <h1>About Us</h1>
+          <p style="opacity: 0.75;">Welcome to Travel Toor, your ultimate gateway 
+            to unforgettable journeys around the globe. At Travel Toor, we believe that every trip 
+            should be an adventure filled with discovery, relaxation, and cultural immersion. Whether
+            you're dreaming of relaxing on a pristine beach, exploring ancient ruins, or tasting exotic
+            cuisines, we are here to make your travel dreams a reality. Our expert team curates the best 
+            destinations and experiences, ensuring that each journey with us is unique and enriching. Join us at Travel Toor 
+            and embark on a journey 
+            that will leave you with memories to cherish for a lifetime. Discover the world with us, one destination at a time.</p>
+        </div>
+        <div class="right">
+          <img class="hikeimg " src="../../assets/Hiking.jpg""></img>
+        </div>
+        
       </div>
-    <div>
-        <h1 style="text-align: center; padding: 3rem; font-size: 3rem;">Our Team</h1>
+      <div class="below">
+        <h1>Our Team</h1>
         <div class="members">
             <div class="teamcard">
                 <img>
-                <h1 style="margin: 3rem 0 1.5rem;">Akash Tripathi</h1>
+                <h1>Akash Tripathi</h1>
                 <p style="margin-bottom: 1.5rem;">Web Developer</p>
-                <a href="https://www.linkedin.com/in/akashtripathi122004"><i class="fa-brands fa-linkedin-in" style="margin-right: 1rem;"></i></a>
-                <a href="https://www.instagram.com/akashhh.tt/"><i class="fa-brands fa-instagram" style="margin-right: 1rem;"></i></a>
-                <a href="https://github.com/akashtripathi12"><i class="fa-brands fa-github"></i></a>
+                <div class="icons">
+                  <a href="https://www.linkedin.com/in/akashtripathi122004"><i class="fa-brands fa-linkedin-in" style="margin-right: 1rem;"></i></a>
+                  <a href="https://www.instagram.com/akashhh.tt/"><i class="fa-brands fa-instagram" style="margin-right: 1rem;"></i></a>
+                  <a href="https://github.com/akashtripathi12"><i class="fa-brands fa-github"></i></a>
+                </div>    
             </div>
             <div class="teamcard">
                 <img>
-                <h1 style="margin: 3rem 0 1.5rem;">Tushar Tiwari</h1>
-                <p style="margin-bottom: 1.5rem;">Web Developer</p>
-                <a href="https://www.linkedin.com/in/tushar-tiwari-72151a289"><i class="fa-brands fa-linkedin-in" style="margin-right: 1rem;"></i></a>
+                <h1 >Tushar Tiwari</h1>
+                <p >Web Developer</p>
+                <div class="icons">
+                  <a href="https://www.linkedin.com/in/tushar-tiwari-72151a289"><i class="fa-brands fa-linkedin-in" style="margin-right: 1rem;"></i></a>
                 <a href="https://www.instagram.com/tushar_183.1/"><i class="fa-brands fa-instagram" style="margin-right: 1rem;"></i></a>
                 <a href="https://github.com/tushar330"><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
             <div class="teamcard">
                 <img>
-                <h1 style="margin: 3rem 0 1.5rem;">Niharika Saxena</h1>
-                <p style="margin-bottom: 1.5rem;">Web Developer</p>
-                <a href="https://www.linkedin.com/in/niharika-saxena-256747281"><i class="fa-brands fa-linkedin-in" style="margin-right: 1rem;"></i></a>
-                <a href="https://www.instagram.com/niharika.saxena18/"><i class="fa-brands fa-instagram" style="margin-right: 1rem;"></i></a>
-                <a href="https://github.com/niharikasaxena18"><i class="fa-brands fa-github"></i></a>
+                <h1 >Niharika Saxena</h1>
+                <p >Web Developer</p>
+                <div class="icons">
+                  <a href="https://www.linkedin.com/in/niharika-saxena-256747281"><i class="fa-brands fa-linkedin-in" style="margin-right: 1rem;"></i></a>
+                  <a href="https://www.instagram.com/niharika.saxena18/"><i class="fa-brands fa-instagram" style="margin-right: 1rem;"></i></a>
+                  <a href="https://github.com/niharikasaxena18"><i class="fa-brands fa-github"></i></a>
+                </div>
             </div>
         </div>
-    </div>
+      </div>
+    </main>
+  </div>
+  
+    
     <footer>
       <div class="footer" id="footer">
         <div class="footer-content">
@@ -136,5 +172,6 @@
         </p>
       </div>
     </footer>
+    <script src="/TravelTicketFrontend/public/scripts/packages.js"></script>
 </body>
 </html>

@@ -72,125 +72,191 @@
           <div></div>
         </li>
       </ul>
-    </nav>
-    <div class="container" id="container">
-      <div class="form-container sign-up-container">
-        <div class="image"></div>
-        <div class="form sign-up-form">
-          <form class="register" action="#" method="POST">
-            <h1>Create Account</h1>
-            <div class="social-container">
-              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="social"
-                ><i class="fab fa-google-plus-g"></i
-              ></a>
-              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            <div class="infield">
-              <input
-                type="name"
-                placeholder="Name"
-                name="name"
-                id="name"
-                required
-              />
-              <i class="fa-solid fa-user"></i>
-            </div>
-            <div class="infield">
-              <input
-                id="email"
-                type="email"
-                placeholder="Email"
-                name="email"
-                required
-              />
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="infield">
-              <input
-                id="password"
-                class="password"
-                type="password"
-                placeholder="Password"
-                name="password"
-                required
-                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_+=\-]).{8,}$"
-                title="Password must be 8-32 characters, including uppercase, lowercase, digit, and special character"
-              />
-              <i class="fa-solid fa-lock"></i>
-              <img
-                src="/TravelTicketFrontend/assets/eye-close.png"
-                class="toggle-password"
-                data-target="password"
-              />
-            </div>
-            <div class="infield">
-              <input
-                id="confirm-password"
-                class="password"
-                type="password"
-                placeholder="Confirm Password"
-                name="confirm-password"
-                required
-                pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_+=\-]).{8,}$"
-                title="Password must be 8-32 characters, including uppercase, lowercase, digit, and special character"
-              />
-              <i class="fa-solid fa-lock"></i>
-              <img
-                src="/TravelTicketFrontend/assets/eye-close.png"
-                class="toggle-password"
-                data-target="confirm-password"
-              />
-            </div>
-            <button class="signup" type="submit">Sign Up</button>
-            <div class="have_account">
-              Already have an account? <a href="#" id="login">Login</a>
-            </div>
-            <div class="plane"></div>
-          </form>
+    </nav> 
+    
+    <div class="login-main">
+      <div class="container" id="container">
+        <div class="form-container sign-up-container">
+              <div class="form sign-up-form">
+                <form class="register" action="#" method="POST">
+                  <h1>Create Account</h1>
+                  <div class="infield">
+                    <input
+                      type="name"
+                      placeholder="Name"
+                      name="name"
+                      id="name"
+                      required
+                    />
+                    <i class="fa-solid fa-user"></i>
+                  </div>
+                  <div class="infield">
+                    <input
+                      id="email"
+                      type="email"
+                      placeholder="Email"
+                      name="email"
+                      required
+                    />
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="infield">
+                    <input
+                      id="password"
+                      class="password"
+                      type="password"
+                      placeholder="Password"
+                      name="password"
+                      required
+                      pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_+=\-]).{8,}$"
+                      title="Password must be 8-32 characters, including uppercase, lowercase, digit, and special character"
+                    />
+                    <i class="fa-solid fa-lock"></i>
+                    <img
+                      src="/TravelTicketFrontend/assets/eye-close.png"
+                      class="toggle-password"
+                      data-target="password"
+                    />
+                  </div>
+                  <div class="infield">
+                    <input
+                      id="confirm-password"
+                      class="password"
+                      type="password"
+                      placeholder="Confirm Password"
+                      name="confirm-password"
+                      required
+                      pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_+=\-]).{8,}$"
+                      title="Password must be 8-32 characters, including uppercase, lowercase, digit, and special character"
+                    />
+                    <i class="fa-solid fa-lock"></i>
+                    <img
+                      src="/TravelTicketFrontend/assets/eye-close.png"
+                      class="toggle-password"
+                      data-target="confirm-password"
+                    />
+                  </div>
+                  <button class="signup" type="submit">Sign Up</button>
+                  <div class="have_account">
+                    Already have an account? <a href="#" id="login">Login</a>
+                  </div>
+                  <div class="plane"></div>
+                </form>
+              </div>
         </div>
+        
+          <div class="form-container sign-in-container">
+              <div class="form sign-in-form">
+                <form class="log-in" action="#" method="POST">
+                  <h1>Sign in</h1>
+                  
+                  <div class="infield">
+                    <input type="email" placeholder="Email" name="email" required />
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div class="infield">
+                    <input
+                      id="password-signin"
+                      type="password"
+                      placeholder="Password"
+                      name="password"
+                      required
+                    />
+                    <i class="fa-solid fa-lock"></i>
+                    <img
+                      src="/TravelTicketFrontend/assets/eye-close.png"
+                      class="toggle-password"
+                      data-target="password-signin"
+                    />
+                  </div>
+                  <a href="#" class="forgot">Forgot your password?</a>
+                  <button type="submit" class="signin">Sign In</button>
+                  <div class="Dont_have_account">
+                    Don't have an account? <a href="#" id="signup">Signup</a>
+                  </div>
+                </form>
+              </div>
+          </div>
+        
+      <div class="overlay-container" id="overlayCon">
+          <div class="overlay">
+              
+              <div class="overlay-panel overlay-right">
+                <div class="overlay-content">
+                  <h1>Welcome Back!</h1>
+                  <p>To keep connected with us please login with your personal info</p>
+                  <button>Sign Up</button>
+                  
+                </div>
+              </div>
+              <div class="overlay-panel overlay-left">
+                
+                <div class="overlay-content"><h1>Hello, Friend!</h1>
+                  <p>Enter your personal details and start journey with us</p>
+                  <button id="signUpBtn">Sign In</button>
+                </div>
+                  
+              </div>
+            </div>
+          <button id="overlayBtn"></button>
       </div>
-      <div class="form-container sign-in-container">
-        <div class="image"></div>
-        <div class="form sign-in-form">
-          <form class="log-in" action="#" method="POST">
-            <h1>Sign in</h1>
-            <div class="social-container">
-              <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
-              <a href="#" class="social"
-                ><i class="fab fa-google-plus-g"></i
-              ></a>
-              <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
-            </div>
-            <div class="infield">
-              <input type="email" placeholder="Email" name="email" required />
-              <i class="fa-solid fa-envelope"></i>
-            </div>
-            <div class="infield">
-              <input
-                id="password-signin"
-                type="password"
-                placeholder="Password"
-                name="password"
-                required
-              />
-              <i class="fa-solid fa-lock"></i>
-              <img
-                src="/TravelTicketFrontend/assets/eye-close.png"
-                class="toggle-password"
-                data-target="password-signin"
-              />
-            </div>
-            <a href="#" class="forgot">Forgot your password?</a>
-            <button type="submit" class="signin">Sign In</button>
-            <div class="Dont_have_account">
-              Don't have an account? <a href="#" id="signup">Signup</a>
-            </div>
-          </form>
-        </div>
       </div>
     </div>
 
+    <div class="footer" id="footer">
+      <div class="footer-content">
+        <div class="footer-content-left">
+          <h1>TravelToor</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Voluptatum, tenetur reprehenderit suscipit a sit ad ullam, debitis
+            inventore iure totam corrupti optio adipisci accusantium nostrum
+            perferendis vitae soluta asperiores? Sapiente.
+          </p>
+          <div class="footer-social-icons">
+            <img src="assets/facebook_icon.png" alt="" />
+            <img src="assets/linkedin_icon.png" alt="" />
+            <img src="assets/twitter_icon.png" alt="" />
+          </div>
+        </div>
+        <div class="footer-content-center">
+          <h2>COMPANY</h2>
+          <ul>
+            <li>
+              <a href="/TravelTicketFrontend/public/pages/about.html"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a href="/TravelTicketFrontend/public/pages/contact.html"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a href="/TravelTicketFrontend/public/pages/packages.html"
+                >Packages</a
+              >
+            </li>
+            <li>
+              <a href="/TravelTicketFrontend/public/pages/privacypolicy.html"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-content-right">
+          <h2>GET IN TOUCH</h2>
+          <ul>
+            <li>+1-212-456-7890</li>
+            <li>contact@TravelToor.com</li>
+          </ul>
+        </div>
+      </div>
+      <hr />
+      <p class="footer-copyright">
+        Copyright © 2024 TravelToor. All rights reserved
+      </p>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@3.0.5/dist/js.cookie.min.js"></script>
     <script src="../scripts/login.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
