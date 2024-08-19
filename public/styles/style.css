@@ -1823,7 +1823,7 @@ hr {
 
   .content .mailbox::placeholder,
   .content input {
-    padding-left: 1rem;
+    padding-left: 0.5rem;
     color: #fff;
     font-size: 14px;
   }
@@ -2479,7 +2479,7 @@ hr {
   }
   .content .mailbox::placeholder,
   .content input {
-    padding-left: 1rem;
+    padding-left: 0.2rem;
     color: #fff;
     font-size: 10px;
   }
