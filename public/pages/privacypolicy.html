@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../styles/style.css" />
     <link
       rel="icon"
       type="image/png"
@@ -17,6 +16,22 @@
       rel="stylesheet"
     />
     <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Inter;
+      }
+      .child{
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      main{
+        max-width: 1420px;
+      }
         p{
             opacity: 0.85;
         }
@@ -26,6 +41,335 @@
         .footer{
             margin-top: 2rem;
         }
+        /* nav */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+}
+
+/* Styling for the logo image */
+.navbar-logo img {
+  height: auto;
+  width: 70px;
+  max-width: 100%;
+}
+
+/*nav bar*/
+nav {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 0rem;
+}
+
+nav ul {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: #000;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 137%;
+  cursor: pointer;
+}
+
+nav li {
+  height: auto;
+}
+
+nav a {
+  height: 100%;
+  text-decoration: none;
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  color: black;
+}
+.login-btn {
+  background-color: #ffa03f;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin-top: 18px;
+  width: 78px;
+  height: 36px;
+  margin-right: 40px;
+}
+.login-btn a {
+  color: #f0f0f0;
+  font-size: 1rem;
+}
+
+nav li:first-child {
+  color: #000;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 137%;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+nav li .toor {
+  color: #ffa03f;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 300px;
+  z-index: 99999;
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  background-color: #ffa03f;
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  transform: translateX(100%);
+  transition: transform 0.5s ease-out;
+}
+.show {
+  transform: translateX(0);
+}
+
+.sidebar li {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.sidebar a {
+  width: 100%;
+}
+/* navigation */
+ul.main-nav {
+  margin-left: 0rem;
+}
+.main-nav {
+  width: 100%;
+  margin-left: -1rem;
+}
+
+.menu-btn {
+  display: none;
+  color: #000;
+  font-size: 1.75rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 137%;
+  cursor: pointer;
+}
+
+/*responsive*/
+@media (max-width: 850px) {
+  .hideonMobile {
+    display: none !important;
+  }
+  nav li:first-child {
+    font-size: 1.55rem;
+    font-weight: 700;
+    line-height: 50%;
+    cursor: pointer;
+  }
+  .menu-btn {
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .hideonMobile {
+    display: none;
+  }
+  .menu-btn {
+    display: block;
+  }
+  .sidebar {
+    width: 50%;
+  }
+  .newNav {
+    display: none;
+  }
+}
+
+@media (max-width: 430px) {
+  nav {
+    padding: 0 2rem 0 1rem;
+    height: 60px;
+  }
+  nav li:first-child {
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 17%;
+    cursor: pointer;
+  }
+  .menu-btn {
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  nav a {
+    padding: 0 0;
+  }
+  .sidebar {
+    padding: 0 1rem;
+    width: 100%;
+  }
+}
+
+/* footer */
+.footer {
+  width: 100%;
+  color: #fff;
+  background-color: rgba(255, 160, 63, 0.9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  padding-top: 60px;
+  margin-top: 60px;
+}
+.footer-content {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 90px;
+}
+.footer-content-left,
+.footer-content-right,
+.footer-content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 30px;
+}
+
+.footer-content-left p {
+  margin-top: 0px;
+  font-size: 16px;
+  line-height: 24px;
+}
+.footer h1 {
+  font-size: 24px;
+}
+.footer-content-left li,
+.footer-content-right li,
+.footer-content-center li {
+  list-style: none;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.footer-content-left h2,
+.footer-content-right h2,
+.footer-content-center h2 {
+  color: white;
+  font-size: 24px;
+}
+.footer-social-icons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 20px;
+}
+
+.icon-container img {
+  width: 30px;
+  height: 30px;
+  margin-bottom: 5px;
+}
+
+.icon-container span {
+  font-size: 14px;
+}
+.footer hr {
+  width: 100%;
+  height: 2px;
+  margin: 10px 0px;
+  background-color: white;
+  border: none;
+}
+.footer-copyright {
+  margin-bottom: 40px;
+}
+
+/*responsive styles for footer*/
+@media (max-width: 800px) {
+  .footer {
+    gap: 20px;
+    padding-top: 90px;
+    margin-top: 50px;
+  }
+  .footer-content {
+    gap: 60px;
+  }
+  .footer-content-left,
+  .footer-content-right,
+  .footer-content-center {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+  }
+
+  .footer-content-left p {
+    font-size: 14px;
+  }
+
+  .footer-content-left li,
+  .footer-content-right li,
+  .footer-content-center li {
+    list-style: none;
+    margin-bottom: 30px;
+    cursor: pointer;
+  }
+  .footer-content-left h2,
+  .footer-content-right h2,
+  .footer-content-center h2 {
+    color: white;
+    font-size: 20px;
+  }
+  .footer-social-icons img {
+    margin-right: 25px;
+  }
+  .footer hr {
+    width: 100%;
+    height: 2px;
+    margin: 20px 0px;
+    background-color: white;
+    border: none;
+  }
+}
+@media (max-width: 750px) {
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+  }
+  .footer-copyright {
+    text-align: center;
+  }
+}
+@media (max-width: 765px) {
+  .para_content {
+    display: none;
+  }
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.footer-content-center ul {
+  padding-inline-start: 0;
+}
+.footer-content-right ul {
+  padding-inline-start: 0;
+}
     </style>
 
     <!-- Font Awesome cdn -->
@@ -40,77 +384,68 @@
   </head>
   <body class="body">
     <div class="child">
+      
       <main>
         <!-- navbar -->
-        <nav class="nav">
-          <ul class="sidebar">
-            <li onclick="hideSidebar()">
-              <a><i class="fa-solid fa-xmark"></i></a>
-            </li>
-            <li>
-              <a href="/TravelTicketFrontend/public/pages/about.html">About</a>
-            </li>
-            <li>
-              <a href="/TravelTicketFrontend/public/pages/packages.html"
-                >Packages</a
-              >
-            </li>
-            <li>
-              <a href="/TravelTicketFrontend/public/pages/contact.html"
-                >Contact</a
-              >
-            </li>
-            <li id="sideCart">
-              <a href="/TravelTicketFrontend/public/pages/cart.html">Cart</a>
-            </li>
-            <li id="sideProfile">
-              <a href="/TravelTicketFrontend/public/pages/profile.html"
-                >Profile</a
-              >
-            </li>
-            <li id="sideLogout">
-              <a href="/TravelTicketFrontend/index.html">Logout</a>
-            </li>
-            <li id="sideLogin">
-              <a href="/TravelTicketFrontend/public/pages/login.html">Login</a>
-            </li>
-          </ul>
-          <ul>
-            <li>
-              <a href="/TravelTicketFrontend/index.html">Travel<span class="toor">Toor</span></a>
-            </li>
-            <li class="hideonMobile">
-              <a href="/TravelTicketFrontend/public/pages/about.html">About</a>
-            </li>
-            <li class="hideonMobile">
-              <a href="/TravelTicketFrontend/public/pages/packages.html"
-                >Packages</a
-              >
-            </li>
-            <li class="hideonMobile">
-              <a href="/TravelTicketFrontend/public/pages/contact.html"
-                >Contact</a
-              >
-            </li>
-            <li class="hideonMobile" id="cart">
-              <a href="/TravelTicketFrontend/public/pages/cart.html">Cart</a>
-            </li>
-            <li class="hideonMobile" id="profile">
-              <a href="/TravelTicketFrontend/public/pages/profile.html"
-                >Profile</a
-              >
-            </li>
-            <li class="hideonMobile" id="logout">
-              <a href="/TravelTicketFrontend/index.html">Logout</a>
-            </li>
-            <li class="hideonMobile" id="login">
-              <a href="/TravelTicketFrontend/public/pages/login.html">Login</a>
-            </li>
-            <li class="menu-btn" onclick="showSidebar()">
-              <a><i class="fa-solid fa-bars-staggered"></i></a>
-            </li>
-          </ul>
-        </nav>
+      <nav class="nav">
+        <ul class="sidebar">
+          <li onclick="hideSidebar()">
+            <a><i class="fa-solid fa-xmark"></i></a>
+          </li>
+          <li>
+            <a href="/TravelTicketFrontend/public/pages/about.html">About</a>
+          </li>
+          <li>
+            <a href="/TravelTicketFrontend/public/pages/packages.html"
+              >Packages</a
+            >
+          </li>
+          <li>
+            <a href="/TravelTicketFrontend/public/pages/contact.html"
+              >Contact</a
+            >
+          </li>
+          <li id="profile">
+            <a href="/TravelTicketFrontend/public/pages/profile.html"
+              >Profile</a
+            >
+          </li>
+        </ul>
+        <ul class="main-nav">
+          <li>
+            <a href="/TravelTicketFrontend/index.html" class="navbar-logo">
+              <img
+                src="/TravelTicketFrontend/assets/Travel-toor-logo-black.png"
+                alt="Travel Tour Logo"
+              />
+            </a>
+          </li>
+          <li class="hideonMobile">
+            <a href="/TravelTicketFrontend/public/pages/about.html">About</a>
+          </li>
+          <li class="hideonMobile">
+            <a href="/TravelTicketFrontend/public/pages/packages.html"
+              >Packages</a
+            >
+          </li>
+          <li class="hideonMobile">
+            <a href="/TravelTicketFrontend/public/pages/contact.html"
+              >Contact</a
+            >
+          </li>
+          <li class="hideonMobile" id="profile">
+            <a href="/TravelTicketFrontend/public/pages/profile.html"
+              ><i class="fa-solid fa-user"></i
+            ></a>
+          </li>
+          <li class="menu-btn" onclick="showSidebar()">
+            <a><i class="fa-solid fa-bars-staggered"></i></a>
+          </li>
+          <li>
+            <div></div>
+          </li>
+        </ul>
+      </nav>
         <div class="pripol">
         <h2 style="margin-top: 1rem; margin-bottom: 2rem; text-align: center; font-size: 3rem;"><b>PRIVACY</b> <b style="color: #ffa03f;">POLICY</b></h2>
         <p style="font-size: 1.5rem;"><strong>TravelTour</strong> (the “Company”) is committed to protecting the privacy of its users. This Privacy Policy (“Privacy Policy”) is designed to help you understand what information we gather, how we use it, what we do to protect it, and to assist you in making informed decisions when using our website.  Unless otherwise indicated below, this Privacy Policy applies to any website that references this Privacy Policy, any Company website, as well as any data the Company may collect across partnered and unaffiliated sites.</p>
@@ -183,44 +518,68 @@
         <h2 style="margin-top: 2rem; margin-bottom: 2rem;">Last Updated</h2>
         <p>This Privacy Policy was last updated on Monday, August 5th, 2024.</p>
         </div>
-        <div class="footer" id="footer">
-            <div class="footer-content">
-              <div class="footer-content-left">
-                <h1>TravelToor</h1>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                  Voluptatum, tenetur reprehenderit suscipit a sit ad ullam, debitis
-                  inventore iure totam corrupti optio adipisci accusantium nostrum
-                  perferendis vitae soluta asperiores? Sapiente.
-                </p>
-                <div class="footer-social-icons">
-                  <img src="assets/facebook_icon.png" alt="" />
-                  <img src="assets/linkedin_icon.png" alt="" />
-                  <img src="assets/twitter_icon.png" alt="" />
-                </div>
+      </main>
+      <div class="footer" id="footer">
+        <div class="footer-content">
+          <div class="footer-content-left">
+            <h1>TravelToor</h1>
+            <p>
+              At TravelToor, we believe that travel should be a transformative
+              experience that broadens your horizons and enriches your life. Our
+              mission is to provide exceptional travel experiences that exceed
+              your expectations, while also promoting cultural understanding and
+              environmental sustainability.Whether you're a seasoned traveler or
+              embarking on your first journey.
+            </p>
+            <div class="footer-social-icons">
+              <div class="icon-container">
+                <a
+                  href="https://github.com/akashtripathi12/TravelTicketFrontend"
+                  ><img src="../../assets/github-logo.png" alt=""
+                /></a>
+                <span>Frontend</span>
               </div>
-              <div class="footer-content-center">
-                <h2>COMPANY</h2>
-                <ul>
-                  <li>Home</li>
-                  <li>About us</li>
-                  <li>Packages</li>
-                  <li>Privacy Policy</li>
-                </ul>
-              </div>
-              <div class="footer-content-right">
-                <h2>GET IN TOUCH</h2>
-                <ul>
-                  <li>+1-212-456-7890</li>
-                  <li>contact@TravelToor.com</li>
-                </ul>
+              <div class="icon-container">
+                <a href="https://github.com/akashtripathi12/TravelTicketBackend"
+                  ><img src="../../assets/github-logo.png" alt=""
+                /></a>
+                <span>Backend</span>
               </div>
             </div>
-            <hr />
-            <p class="footer-copyright">
-              Copyright © 2024 TravelToor. All rights reserved
-            </p>
+          </div>
+          <div class="footer-content-center">
+            <h2>COMPANY</h2>
+            <ul>
+              <li>
+                <a href="/TravelTicketFrontend/public/pages/about.html"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="/TravelTicketFrontend/public/pages/contact.html"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="/TravelTicketFrontend/public/pages/packages.html"
+                  >Packages</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="footer-content-right">
+            <h2>GET IN TOUCH</h2>
+            <ul>
+              <li>+1-212-456-7890</li>
+              <li>contact@TravelToor.com</li>
+            </ul>
           </div>
         </div>
-    </body>
+        <hr />
+        <p class="footer-copyright">
+          Copyright © 2024 TravelToor. All rights reserved
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
