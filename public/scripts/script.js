@@ -71,7 +71,7 @@ document.querySelectorAll("[id='logout-btn']").forEach((element) => {
       Cookies.remove("token");
       console.log("removed");
     }
-    window.location.href = "/TravelTicketFrontend/public/index.html";
+    window.location.href = "./index.html";
     document.querySelectorAll("[id='logout-btn']").forEach((element) => {
       element.style.display = "none";
     });
@@ -104,7 +104,7 @@ function hideSidebar() {
 
 //redirect to details
 function redirectToPackageDetail(id) {
-  window.location.href = `/TravelTicketFrontend/public/pages/package-detail.html?id=${id}`;
+  window.location.href = `./public/pages/package-detail.html?id=${id}`;
 }
 
 //swiper for cards

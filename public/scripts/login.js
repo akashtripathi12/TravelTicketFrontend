@@ -12,10 +12,10 @@ document.querySelectorAll(".toggle-password").forEach((icon) => {
 
     if (input.type === "password") {
       input.type = "text";
-      this.src = "/TravelTicketFrontend/assets/eye-open.png";
+      this.src = "../../assets/eye-open.png";
     } else {
       input.type = "password";
-      this.src = "/TravelTicketFrontend/assets/eye-close.png";
+      this.src = "../../assets/eye-close.png";
     }
   });
 });

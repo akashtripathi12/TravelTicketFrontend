@@ -2683,7 +2683,7 @@ hr {
 .mobile-view {
   display: none;
 }
-@media (max-width: 405px) {
+@media (max-width: 430px) {
   #mobile-view {
     display: block;
     position: relative;

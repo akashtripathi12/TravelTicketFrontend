@@ -94,7 +94,7 @@ function renderSearchData(packages) {
 
   packages.forEach((packageItem) => {
     const packageHtml = `
-        <a href="/TravelTicketFrontend/public/pages/package-detail.html?id=${packageItem._id}" class="listing-link">
+        <a href="./package-detail.html?id=${packageItem._id}" class="listing-link">
           <div class="card">
             <img src="${packageItem.image.url}" class="card-img" alt="..."/>
             <div class="card-body">
@@ -187,7 +187,7 @@ function renderData() {
 
   packages.forEach((packageItem) => {
     const packageHtml = `
-        <a href="/TravelTicketFrontend/public/pages/package-detail.html?id=${packageItem._id}" class="listing-link">
+        <a href="./package-detail.html?id=${packageItem._id}" class="listing-link">
           <div class="card">
             <img src="${packageItem.image.url}" class="card-img" alt="..."/>
             <div class="card-body">

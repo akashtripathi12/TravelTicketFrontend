@@ -61,7 +61,7 @@ document.querySelectorAll("[id='logout-btn']").forEach((element) => {
       Cookies.remove("token");
       console.log("removed");
     }
-    window.location.href = "/TravelTicketFrontend/public/index.html";
+    window.location.href = "../../index.html";
     document.querySelectorAll("[id='logout-btn']").forEach((element) => {
       element.style.display = "none";
     });
@@ -95,7 +95,7 @@ function hideSidebar() {
 if (!token) {
   // redirect to login page
   alert("Please Login First");
-  window.location.href = "/TravelTicketFrontend/public/pages/login.html";
+  window.location.href = "./login.html";
 } else {
   document.getElementById("cont").style.display = "block";
   const fetchUserDetails = async () => {

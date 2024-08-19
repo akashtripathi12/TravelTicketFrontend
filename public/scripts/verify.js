@@ -11,10 +11,10 @@ const verifyPayment = async () => {
     }
   );
   if (response.data.success) {
-    const url = "/TravelTicketFrontend/public/pages/profile.html";
+    const url = "../pages/profile.html";
     window.location.href = url;
   } else {
-    window.location.href = "/TravelTicketFrontend/index.html";
+    window.location.href = "../../index.html";
     alert(response.data.message);
   }
 };

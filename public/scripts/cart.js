@@ -61,7 +61,7 @@ document.querySelectorAll("[id='logout-btn']").forEach((element) => {
       Cookies.remove("token");
       console.log("removed");
     }
-    window.location.href = "/TravelTicketFrontend/public/index.html";
+    window.location.href = "../../index.html";
     document.querySelectorAll("[id='logout-btn']").forEach((element) => {
       element.style.display = "none";
     });
@@ -94,7 +94,7 @@ function hideSidebar() {
 
 if (!token) {
   alert("Not Authorzied");
-  window.location.href = "/TravelTicketFrontend/public/pages/login.html";
+  window.location.href = "./login.html";
 } else {
   const urlParams = new URLSearchParams(window.location.search);
   const packageId = urlParams.get("id");
@@ -305,6 +305,6 @@ if (!token) {
     });
   } else {
     alert("no cart item found");
-    window.location.href = "/TravelTicketFrontend/public/pages/packages.html";
+    window.location.href = "./packages.html";
   }
 }

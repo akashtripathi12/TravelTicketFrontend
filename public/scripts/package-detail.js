@@ -39,16 +39,16 @@ if (packageId) {
   const btn = document.getElementById("proceed-to-checkout");
   btn.addEventListener("click", () => {
     if (token) {
-      const url = `/TravelTicketFrontend/public/pages/cart.html?id=${packageId}`;
+      const url = `./cart.html?id=${packageId}`;
       window.location.href = url;
     } else {
       alert("Please Login to proceed");
-      window.location.href = "/TravelTicketFrontend/public/pages/login.html";
+      window.location.href = "./login.html";
     }
   });
 } else {
   alert("Invalid Package selected");
-  window.location.href = "/TravelTicketFrontend/public/pages/packages.html";
+  window.location.href = "./packages.html";
 }
 
 //navbar
