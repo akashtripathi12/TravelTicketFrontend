@@ -53,7 +53,7 @@ async function handleSubmitLogin(event) {
 
   if (response.data.success) {
     alert(response.data.message);
-    window.location.href = "/TravelTicketFrontend/index.html";
+    window.location.href = "../../index.html";
     const token = response.data.token;
     Cookies.set("token", token, { expires: 1 });
   } else {
@@ -83,7 +83,7 @@ async function handleSubmitRegister(event) {
   if (response.data.success) {
     alert(response.data.message);
     Cookies.set("token", response.data.token, { expires: 1 });
-    window.location.href = "/TravelTicketFrontend/index.html";
+    window.location.href = "../../index.html";
   } else {
     alert(response.data.message);
   }
