@@ -1,9 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Google Fonts -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="../../assets/Travel-toor-logo-black.png"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,160 +23,215 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="../styles/about.css">
+    <link rel="stylesheet" href="../styles/about.css" />
     <title>About Us</title>
-</head>
-<body>
-  
-   <!-- navbar -->
-   <nav class="nav">
-    <ul class="sidebar">
-      <li onclick="hideSidebar()">
-        <a><i class="fa-solid fa-xmark"></i></a>
-      </li>
-      <li>
-        <a href="/TravelTicketFrontend/public/pages/about.html">About</a>
-      </li>
-      <li>
-        <a href="/TravelTicketFrontend/public/pages/packages.html"
-          >Packages</a
-        >
-      </li>
-      <li>
-        <a href="/TravelTicketFrontend/public/pages/contact.html"
-          >Contact</a
-        >
-      </li>
-    </ul>
-    <ul class="main-nav">
-      <li>
-        <a href="/TravelTicketFrontend/index.html" class="navbar-logo">
-          <img
-            src="/TravelTicketFrontend/assets/Travel-toor-logo-black.png"
-            alt="Travel Tour Logo"
-          />
-        </a>
-      </li>
-      <li class="hideonMobile">
-        <a href="/TravelTicketFrontend/public/pages/about.html">About</a>
-      </li>
-      <li class="hideonMobile">
-        <a href="/TravelTicketFrontend/public/pages/packages.html"
-          >Packages</a
-        >
-      </li>
-      <li class="hideonMobile">
-        <a href="/TravelTicketFrontend/public/pages/contact.html"
-          >Contact</a
-        >
-      </li>
-      <li class="menu-btn" onclick="showSidebar()">
-        <a><i class="fa-solid fa-bars-staggered"></i></a>
-      </li>
-      <li>
-        <div></div>
-      </li>
-    </ul>
-  </nav>
-  <hr />
-  <div class="child">
-    <main>
-      <div class="hero">
-        <div class="left">
-          <h1>About Us</h1>
-          <p style="opacity: 0.75;">Welcome to Travel Toor, your ultimate gateway 
-            to unforgettable journeys around the globe. At Travel Toor, we believe that every trip 
-            should be an adventure filled with discovery, relaxation, and cultural immersion. Whether
-            you're dreaming of relaxing on a pristine beach, exploring ancient ruins, or tasting exotic
-            cuisines, we are here to make your travel dreams a reality. Our expert team curates the best 
-            destinations and experiences, ensuring that each journey with us is unique and enriching. Join us at Travel Toor 
-            and embark on a journey 
-            that will leave you with memories to cherish for a lifetime. Discover the world with us, one destination at a time.</p>
-        </div>
-        <div class="right">
-          <img class="hikeimg " src="../../assets/Hiking.jpg""></img>
-        </div>
-        
-      </div>
-      <div class="below">
-        <h1>Our Team</h1>
-        <div class="members">
-            <div class="teamcard">
-                <img>
-                <h1>Akash Tripathi</h1>
-                <p style="margin-bottom: 1.5rem;">Web Developer</p>
-                <div class="icons">
-                  <a href="https://www.linkedin.com/in/akashtripathi122004"><i class="fa-brands fa-linkedin-in" style="margin-right: 1rem;"></i></a>
-                  <a href="https://www.instagram.com/akashhh.tt/"><i class="fa-brands fa-instagram" style="margin-right: 1rem;"></i></a>
-                  <a href="https://github.com/akashtripathi12"><i class="fa-brands fa-github"></i></a>
-                </div>    
-            </div>
-            <div class="teamcard">
-                <img>
-                <h1 >Tushar Tiwari</h1>
-                <p >Web Developer</p>
-                <div class="icons">
-                  <a href="https://www.linkedin.com/in/tushar-tiwari-72151a289"><i class="fa-brands fa-linkedin-in" style="margin-right: 1rem;"></i></a>
-                <a href="https://www.instagram.com/tushar_183.1/"><i class="fa-brands fa-instagram" style="margin-right: 1rem;"></i></a>
-                <a href="https://github.com/tushar330"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-            <div class="teamcard">
-                <img>
-                <h1 >Niharika Saxena</h1>
-                <p >Web Developer</p>
-                <div class="icons">
-                  <a href="https://www.linkedin.com/in/niharika-saxena-256747281"><i class="fa-brands fa-linkedin-in" style="margin-right: 1rem;"></i></a>
-                  <a href="https://www.instagram.com/niharika.saxena18/"><i class="fa-brands fa-instagram" style="margin-right: 1rem;"></i></a>
-                  <a href="https://github.com/niharikasaxena18"><i class="fa-brands fa-github"></i></a>
-                </div>
-            </div>
-        </div>
-      </div>
-    </main>
-  </div>
-  
-    
-    <footer>
-      <div class="footer" id="footer">
-        <div class="footer-content">
-          <div class="footer-content-left">
-            <h1>TravelToor</h1>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Voluptatum, tenetur reprehenderit suscipit a sit ad ullam, debitis
-              inventore iure totam corrupti optio adipisci accusantium nostrum
-              perferendis vitae soluta asperiores? Sapiente.
+  </head>
+  <body class="body">
+    <!-- navbar -->
+    <nav class="nav">
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a><i class="fa-solid fa-xmark"></i></a>
+        </li>
+        <li>
+          <a href="/TravelTicketFrontend/index.html">Home</a>
+        </li>
+        <li>
+          <a href="/TravelTicketFrontend/public/pages/packages.html"
+            >Packages</a
+          >
+        </li>
+        <li>
+          <a href="/TravelTicketFrontend/public/pages/contact.html">Contact</a>
+        </li>
+      </ul>
+      <ul class="main-nav">
+        <li>
+          <a href="/TravelTicketFrontend/index.html" class="navbar-logo">
+            <img
+              src="/TravelTicketFrontend/assets/Travel-toor-logo-black.png"
+              alt="Travel Tour Logo"
+            />
+          </a>
+        </li>
+        <li class="hideonMobile">
+          <a href="/TravelTicketFrontend/index.html">Home</a>
+        </li>
+        <li class="hideonMobile">
+          <a href="/TravelTicketFrontend/public/pages/packages.html"
+            >Packages</a
+          >
+        </li>
+        <li class="hideonMobile">
+          <a href="/TravelTicketFrontend/public/pages/contact.html">Contact</a>
+        </li>
+        <li class="menu-btn" onclick="showSidebar()">
+          <a><i class="fa-solid fa-bars-staggered"></i></a>
+        </li>
+        <li>
+          <div></div>
+        </li>
+      </ul>
+    </nav>
+    <hr />
+    <div class="child">
+      <main>
+        <div class="hero">
+          <div class="left">
+            <h1>About Us</h1>
+            <p style="opacity: 0.75">
+              Welcome to Travel Toor, your ultimate gateway to unforgettable
+              journeys around the globe. At Travel Toor, we believe that every
+              trip should be an adventure filled with discovery, relaxation, and
+              cultural immersion. Whether you're dreaming of relaxing on a
+              pristine beach, exploring ancient ruins, or tasting exotic
+              cuisines, we are here to make your travel dreams a reality. Our
+              expert team curates the best destinations and experiences,
+              ensuring that each journey with us is unique and enriching. Join
+              us at Travel Toor and embark on a journey that will leave you with
+              memories to cherish for a lifetime. Discover the world with us,
+              one destination at a time.
             </p>
-            <div class="footer-social-icons">
-              <img src="assets/facebook_icon.png" alt="" />
-              <img src="assets/linkedin_icon.png" alt="" />
-              <img src="assets/twitter_icon.png" alt="" />
-            </div>
           </div>
-          <div class="footer-content-center">
-            <h2>COMPANY</h2>
-            <ul>
-              <li>Home</li>
-              <li>About us</li>
-              <li>Packages</li>
-              <li>Privacy Policy</li>
-            </ul>
-          </div>
-          <div class="footer-content-right">
-            <h2>GET IN TOUCH</h2>
-            <ul>
-              <li>+1-212-456-7890</li>
-              <li>contact@TravelToor.com</li>
-            </ul>
+          <div class="right">
+            <img class="hikeimg" src="../../assets/Hiking.jpg" />
           </div>
         </div>
-        <hr />
-        <p class="footer-copyright">
-          Copyright © 2024 TravelToor. All rights reserved
-        </p>
+        <div class="below">
+          <h1>Our Team</h1>
+          <div class="members">
+            <div class="teamcard">
+              <img />
+              <h1>Akash Tripathi</h1>
+              <p style="margin-bottom: 1.5rem">Web Developer</p>
+              <div class="icons">
+                <a href="https://www.linkedin.com/in/akashtripathi122004"
+                  ><i
+                    class="fa-brands fa-linkedin-in"
+                    style="margin-right: 1rem"
+                  ></i
+                ></a>
+                <a href="https://www.instagram.com/akashhh.tt/"
+                  ><i
+                    class="fa-brands fa-instagram"
+                    style="margin-right: 1rem"
+                  ></i
+                ></a>
+                <a href="https://github.com/akashtripathi12"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="teamcard">
+              <img />
+              <h1>Tushar Tiwari</h1>
+              <p>Web Developer</p>
+              <div class="icons">
+                <a href="https://www.linkedin.com/in/tushar-tiwari-72151a289"
+                  ><i
+                    class="fa-brands fa-linkedin-in"
+                    style="margin-right: 1rem"
+                  ></i
+                ></a>
+                <a href="https://www.instagram.com/tushar_183.1/"
+                  ><i
+                    class="fa-brands fa-instagram"
+                    style="margin-right: 1rem"
+                  ></i
+                ></a>
+                <a href="https://github.com/tushar330"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+            <div class="teamcard">
+              <img />
+              <h1>Niharika Saxena</h1>
+              <p>Web Developer</p>
+              <div class="icons">
+                <a href="https://www.linkedin.com/in/niharika-saxena-256747281"
+                  ><i
+                    class="fa-brands fa-linkedin-in"
+                    style="margin-right: 1rem"
+                  ></i
+                ></a>
+                <a href="https://www.instagram.com/niharika.saxena18/"
+                  ><i
+                    class="fa-brands fa-instagram"
+                    style="margin-right: 1rem"
+                  ></i
+                ></a>
+                <a href="https://github.com/niharikasaxena18"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <div class="footer" id="footer">
+      <div class="footer-content">
+        <div class="footer-content-left">
+          <h1>TravelToor</h1>
+          <p>
+            At TravelToor, we believe that travel should be a transformative
+            experience that broadens your horizons and enriches your life. Our
+            mission is to provide exceptional travel experiences that exceed
+            your expectations, while also promoting cultural understanding and
+            environmental sustainability.Whether you're a seasoned traveler or
+            embarking on your first journey.
+          </p>
+          <div class="footer-social-icons">
+            <div class="icon-container">
+              <a href="https://github.com/akashtripathi12/TravelTicketFrontend"
+                ><img src="../../assets/github-logo.png" alt=""
+              /></a>
+              <span>Frontend</span>
+            </div>
+            <div class="icon-container">
+              <a href="https://github.com/akashtripathi12/TravelTicketBackend"
+                ><img src="../../assets/github-logo.png" alt=""
+              /></a>
+              <span>Backend</span>
+            </div>
+          </div>
+        </div>
+        <div class="footer-content-center">
+          <h2>COMPANY</h2>
+          <ul>
+            <li>
+              <a href="/TravelTicketFrontend/public/pages/contact.html"
+                >Contact Us</a
+              >
+            </li>
+            <li>
+              <a href="/TravelTicketFrontend/public/pages/packages.html"
+                >Packages</a
+              >
+            </li>
+            <li>
+              <a href="/TravelTicketFrontend/public/pages/privacypolicy.html"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="footer-content-right">
+          <h2>GET IN TOUCH</h2>
+          <ul>
+            <li>+1-212-456-7890</li>
+            <li>contact@TravelToor.com</li>
+          </ul>
+        </div>
       </div>
-    </footer>
-    <script src="/TravelTicketFrontend/public/scripts/packages.js"></script>
-</body>
+      <hr />
+      <p class="footer-copyright">
+        Copyright © 2024 TravelToor. All rights reserved
+      </p>
+    </div>
+
+    <script src="/TravelTicketFrontend/public/scripts/about.js"></script>
+  </body>
 </html>

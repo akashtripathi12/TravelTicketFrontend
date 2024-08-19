@@ -88,6 +88,10 @@ main {
   cursor: pointer;
 }
 
+.card-body {
+  transition: padding 0.5s; /* add a transition to the padding property */
+}
+
 .card:hover .card-body {
   background-color: #fff;
   padding: 20px;
@@ -251,7 +255,7 @@ main {
 }
 
 .loader h1 {
-  font-size: 4vw;
+  font-size: 40px;
   color: transparent;
   background: linear-gradient(to right, orange, orangered);
   background-clip: text;
@@ -369,6 +373,9 @@ main {
 }
 
 @media (max-width: 768px) {
+  .loader h1 {
+    font-size: 4vw;
+  }
   .pagination {
     width: 60%;
   }

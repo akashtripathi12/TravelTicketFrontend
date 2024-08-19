@@ -945,7 +945,7 @@ nav li .toor {
 
 .content .mailbox::placeholder,
 .content input {
-  padding-left: 2rem;
+  padding-left: 0.5rem;
   color: #fff;
   font-size: 20px;
   font-weight: 500;

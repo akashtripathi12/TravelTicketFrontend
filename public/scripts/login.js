@@ -40,7 +40,6 @@ function toggleForms() {
   }
 }
 
-
 // Handle login form submission
 async function handleSubmitLogin(event) {
   event.preventDefault();
@@ -95,30 +94,29 @@ function showSidebar() {
   const sidebar = document.querySelector(".sidebar");
   sidebar.classList.add("show");
   const body = document.querySelector(".body");
-  //body.style.overflow = "hidden";
+  body.style.overflow = "hidden";
 }
 
 function hideSidebar() {
   const sidebar = document.querySelector(".sidebar");
   sidebar.classList.remove("show");
   const body = document.querySelector(".body");
-  // body.style.overflow = "";
+  body.style.overflow = "";
 }
 
-
-
-
 //new
-const container = document.getElementById('container');
-const overlayCon = document.getElementById('overlayCon');
-const overlayBtn = document.getElementById('overlayBtn');
+const container = document.getElementById("container");
+const overlayCon = document.getElementById("overlayCon");
+const overlayBtn = document.getElementById("overlayBtn");
 
-overlayBtn.addEventListener('click', () => {
-  container.classList.toggle('right-panel-active');
-  
-  overlayBtn.classList.remove('btnScaled');
+if (window.innerWidth <= 650) {
+  container.classList.add("right-panel-active");
+}
+
+overlayBtn.addEventListener("click", () => {
+  container.classList.toggle("right-panel-active");
+  overlayBtn.classList.remove("btnScaled");
   window.requestAnimationFrame(() => {
-    overlayBtn.classList.add('btnScaled');
+    overlayBtn.classList.add("btnScaled");
   });
 });
-
