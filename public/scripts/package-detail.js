@@ -1,3 +1,16 @@
+document.addEventListener("DOMContentLoaded", function () {
+  let loader = document.querySelector(".loader");
+  document.body.style.overflowY = "hidden";
+  setTimeout(() => {
+    loader.style.opacity = 0;
+    loader.style.transition = "opacity 0.5s";
+    setTimeout(() => {
+      loader.style.display = "none";
+      document.body.style.overflowY = "";
+    }, 500);
+  }, 3500);
+});
+
 const token = Cookies.get("token");
 
 const urlParams = new URLSearchParams(window.location.search);

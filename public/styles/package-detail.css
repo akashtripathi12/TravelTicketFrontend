@@ -641,3 +641,52 @@ hr {
   width: 100%;
   opacity: 0.5;
 }
+
+/* Loader */
+.loader {
+  height: 100%;
+  width: 100%;
+  background-color: #fff;
+  position: fixed;
+  z-index: 100000000;
+  top: 0;
+  transition: all ease 0.7s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 0;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.2);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.verify {
+  min-height: 60vh;
+  display: grid;
+}
+.verify .spinner {
+  width: 100px;
+  height: 100px;
+  place-self: center;
+  border: 5px solid #bdbdbd;
+  border-top-color: tomato;
+  border-radius: 50%;
+  animation: rotate 1s infinite;
+}
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }
+}

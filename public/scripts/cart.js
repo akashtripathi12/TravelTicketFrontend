@@ -121,7 +121,7 @@ if (!token) {
     }
 
     let basePrice = 0;
-    let totalAmount = 0;
+    // let totalAmount = 0;
 
     //getting the package through api
     axios
@@ -170,6 +170,7 @@ if (!token) {
       document.getElementById(
         "total-amount"
       ).innerHTML = `&#8377;${totalAmount}`;
+      return totalAmount;
     }
 
     //promo code implementation
@@ -279,7 +280,7 @@ if (!token) {
       event.preventDefault();
       const formData = new FormData(form);
       const jsonData = Object.fromEntries(formData.entries());
-      jsonData.amount = totalAmount;
+      jsonData.amount = updateTotal();
       jsonData.startDate = new Date(journeyDateInput.value);
       jsonData.location = document.getElementById("location").textContent;
       jsonData.journeyDuration = parseInt(journeySelect.value);
