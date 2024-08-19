@@ -312,7 +312,7 @@ form {
 
 .overlay {
   position: relative;
-  background: url("/TravelTicketFrontend/assets/login-background.jpg");
+  background: url("../../assets/login-background.jpg");
   background-size: cover;
   color: #fff;
   left: -150%;
