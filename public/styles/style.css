@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Mukta:700");
 * {
   margin: 0;
   padding: 0;
@@ -236,7 +237,7 @@ nav li .toor {
   height: auto;
 }
 .main_content .right .column1 .card1 {
-  background-image: url("/TravelTicketFrontend/assets/img1.jpg");
+  background-image: url("../../assets/img1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 16rem;
@@ -245,7 +246,7 @@ nav li .toor {
   margin-bottom: 0.938rem;
 }
 .main_content .right .column1 .card2 {
-  background-image: url("/TravelTicketFrontend/assets/img7.jpg");
+  background-image: url("../../assets/img7.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 16rem;
@@ -253,24 +254,12 @@ nav li .toor {
   border-radius: 1.875rem;
 }
 
-/*.plane {
-  margin-top: -3.125rem;
-  background-image: url("/TravelTicketFrontend/assets/plane.jpg");
-  height: 15.625rem;
-  width: 31.25rem;
-  background-repeat: no-repeat;
-  background-size: contain;
-}*/
-
 .main_content .right .card3 {
   width: 20rem;
   height: 32rem;
   border-radius: 1.875rem;
-  /*overflow: hidden;
-  background-image: url("/TravelTicketFrontend/assets/img3.jpg");
-  background-repeat: no-repeat;
-  background-size: contain;*/
 }
+
 .card3 > img {
   width: 100%;
   height: 100%;
@@ -399,7 +388,7 @@ nav li .toor {
 
 .trip .column3 .card4 {
   position: relative;
-  background-image: url("/TravelTicketFrontend/assets/img2.jpg");
+  background-image: url("../../assets/img2.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 400px;
@@ -810,7 +799,7 @@ nav li .toor {
 
 .description .right_part .box {
   position: relative;
-  background-image: url("/TravelTicketFrontend/assets/description.jpg");
+  background-image: url("../../assets/description.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   width: 400px;
@@ -2868,8 +2857,6 @@ hr {
     line-height: 10px;
   }
 }
-
-@import url("https://fonts.googleapis.com/css?family=Mukta:700");
 
 :root {
   --bg: #f3f8fa;
