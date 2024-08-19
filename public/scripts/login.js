@@ -89,8 +89,13 @@ async function handleSubmitRegister(event) {
   }
 }
 
+const card = document.querySelectorAll(".hidden");
+
 // Show and hide sidebar functions
 function showSidebar() {
+  card.forEach((element) => {
+    element.style.opacity = "0";
+  });
   const sidebar = document.querySelector(".sidebar");
   sidebar.classList.add("show");
   const body = document.querySelector(".body");
@@ -98,6 +103,9 @@ function showSidebar() {
 }
 
 function hideSidebar() {
+  card.forEach((element) => {
+    element.style.opacity = "1";
+  });
   const sidebar = document.querySelector(".sidebar");
   sidebar.classList.remove("show");
   const body = document.querySelector(".body");

@@ -59,7 +59,6 @@
 .sign-in-container {
   z-index: 2;
 }
-
 form {
   width: 100%;
   display: flex;
@@ -154,7 +153,6 @@ form {
   top: 0;
   left: 60%;
   width: 40%;
-
   height: 100%;
   overflow: hidden;
   transition: transform 0.6s ease-in-out;
