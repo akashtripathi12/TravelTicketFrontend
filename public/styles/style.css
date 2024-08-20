@@ -795,6 +795,7 @@ nav li .toor {
   align-items: center;
   width: 260px;
   height: 80px;
+  cursor: pointer;
   border-radius: 14px;
   background-color: rgba(255, 160, 63, 1);
 }
