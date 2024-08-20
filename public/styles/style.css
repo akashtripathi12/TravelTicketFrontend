@@ -35,13 +35,14 @@ main {
 /* navigation */
 .newNav {
   border-radius: 0 20px 20px 0;
-  height: 600px;
+  height: 450px;
+  width: 550px;
   position: fixed;
-  left: -29rem;
-  top: 10rem;
+  left: -33.5rem;
+  top: 20%;
   bottom: 0;
-  background-color: #ffa03f;
-  border-right: 50px solid #ffa03f;
+  background-color: black;
+  border-right: 50px solid black;
   box-shadow: 4px 0 5px rgba(0, 0, 0, 0.2);
   z-index: 10000000;
 }
@@ -55,7 +56,7 @@ main {
   top: 50%;
   border-width: 15px 10px;
   border-style: solid;
-  border-color: transparent transparent transparent #ffa03f;
+  border-color: transparent transparent transparent black;
 }
 
 .newNav .offer {
@@ -68,18 +69,56 @@ main {
 }
 
 .offer-heading {
-  margin-top: 2rem;
-  font-size: 2rem;
+  color: #f6292d;
+  margin-top: 0rem;
+  font-size: 20px;
   padding: 2rem;
 }
 
 .offer-content {
-  font-size: 1.2rem;
+  color: #d3d3d3;
+  font-size: 1rem;
   padding: 1rem;
 }
 
-.offer-content b {
-  font-size: 2rem;
+.offer-content p {
+  color: #d3d3d3;
+  font-size: 1.5rem;
+}
+.offer-head {
+  width: 100%;
+  margin-top: 1rem;
+  font-size: 28px;
+  color:#f6292d;
+  text-align: center;
+  font-weight: 700;
+}
+.offer-card{
+  margin-top: 2.5rem;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.offer-card .card{
+  width:45%;
+  background-color:rgb(31, 25, 25);
+  border-radius: 15px;
+}
+.offer-card .card .code{
+  margin-top: 1rem;
+  font-size: 20px;
+  background-color: rgb(125, 11, 11);
+  color: #f0f0f0;
+  text-align: center;
+  height: 25px;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+.card hr{
+  width: 100%;
+  margin-top: -10px;
 }
 
 /* hovering */
@@ -2778,7 +2817,7 @@ hr {
     object-fit: cover;
   }
   .trip {
-    padding: 40px 40px;
+    padding: 40px 0px 30px;
   }
   .header,
   .trip_content h3 {
@@ -2786,12 +2825,12 @@ hr {
   }
   .header,
   .trip_content h1 {
-    font-size: 20px;
+    font-size: 25px;
     width: 260px;
   }
   .header,
   .trip_content p {
-    font-size: 12px;
+    font-size: 16px;
     width: 200px;
   }
   .trip_content1 p,
@@ -3080,4 +3119,173 @@ button.learn-more:hover .button-text {
   100% {
     opacity: 0;
   }
+}
+
+
+/* OFFER GLITCH */
+.glitch {
+  color: white;
+  font-size: 50px;
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+@keyframes noise-anim {
+  0% {
+    clip: rect(55px, 9999px, 20px, 0);
+  }
+  5% {
+    clip: rect(70px, 9999px, 25px, 0);
+  }
+  10% {
+    clip: rect(25px, 9999px, 75px, 0);
+  }
+  15% {
+    clip: rect(45px, 9999px, 10px, 0);
+  }
+  20% {
+    clip: rect(35px, 9999px, 65px, 0);
+  }
+  25% {
+    clip: rect(40px, 9999px, 15px, 0);
+  }
+  30% {
+    clip: rect(60px, 9999px, 20px, 0);
+  }
+  35% {
+    clip: rect(25px, 9999px, 55px, 0);
+  }
+  40% {
+    clip: rect(45px, 9999px, 5px, 0);
+  }
+  45% {
+    clip: rect(50px, 9999px, 30px, 0);
+  }
+  50% {
+    clip: rect(30px, 9999px, 60px, 0);
+  }
+  55% {
+    clip: rect(55px, 9999px, 15px, 0);
+  }
+  60% {
+    clip: rect(65px, 9999px, 25px, 0);
+  }
+  65% {
+    clip: rect(15px, 9999px, 45px, 0);
+  }
+  70% {
+    clip: rect(25px, 9999px, 55px, 0);
+  }
+  75% {
+    clip: rect(20px, 9999px, 65px, 0);
+  }
+  80% {
+    clip: rect(10px, 9999px, 70px, 0);
+  }
+  85% {
+    clip: rect(50px, 9999px, 40px, 0);
+  }
+  90% {
+    clip: rect(35px, 9999px, 15px, 0);
+  }
+  95% {
+    clip: rect(45px, 9999px, 5px, 0);
+  }
+  100% {
+    clip: rect(55px, 9999px, 20px, 0);
+  }
+}
+
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0rem; /* Align with the main text */
+  text-shadow: -1px 0 red;
+  top: 0;
+  color: white;
+  overflow: hidden;
+  width: 100%;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim 2s infinite linear alternate-reverse;
+}
+
+@keyframes noise-anim-2 {
+  0% {
+    clip: rect(25px, 9999px, 75px, 0);
+  }
+  5% {
+    clip: rect(45px, 9999px, 55px, 0);
+  }
+  10% {
+    clip: rect(65px, 9999px, 35px, 0);
+  }
+  15% {
+    clip: rect(40px, 9999px, 60px, 0);
+  }
+  20% {
+    clip: rect(55px, 9999px, 45px, 0);
+  }
+  25% {
+    clip: rect(30px, 9999px, 50px, 0);
+  }
+  30% {
+    clip: rect(35px, 9999px, 65px, 0);
+  }
+  35% {
+    clip: rect(60px, 9999px, 40px, 0);
+  }
+  40% {
+    clip: rect(20px, 9999px, 55px, 0);
+  }
+  45% {
+    clip: rect(50px, 9999px, 35px, 0);
+  }
+  50% {
+    clip: rect(25px, 9999px, 65px, 0);
+  }
+  55% {
+    clip: rect(70px, 9999px, 40px, 0);
+  }
+  60% {
+    clip: rect(55px, 9999px, 25px, 0);
+  }
+  65% {
+    clip: rect(35px, 9999px, 70px, 0);
+  }
+  70% {
+    clip: rect(50px, 9999px, 45px, 0);
+  }
+  75% {
+    clip: rect(30px, 9999px, 60px, 0);
+  }
+  80% {
+    clip: rect(60px, 9999px, 20px, 0);
+  }
+  85% {
+    clip: rect(40px, 9999px, 50px, 0);
+  }
+  90% {
+    clip: rect(25px, 9999px, 65px, 0);
+  }
+  95% {
+    clip: rect(70px, 9999px, 30px, 0);
+  }
+  100% {
+    clip: rect(55px, 9999px, 25px, 0);
+  }
+}
+
+.glitch:before {
+  content: attr(data-text);
+  position: absolute;
+  left:8.65rem; /* Align with the main text */
+  text-shadow: 1px 0 blue;
+  top: 0;
+  color: white;
+  background: black;
+  overflow: hidden;
+  clip: rect(0, 900px, 0, 0);
+  animation: noise-anim-2 3s infinite linear alternate-reverse;
 }

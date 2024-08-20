@@ -124,7 +124,7 @@ hr {
     color: #ffa03f;
   }
   .hero p {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 2rem;
     font-weight: 500;
     word-spacing: 4px;
@@ -205,15 +205,15 @@ hr {
     box-sizing: border-box;
   }
   .hero h5 {
-    font-size: 10px;
+    font-size: 12px;
   }
   .hero h1 {
-    font-size: 20px;
+    font-size: 22px;
     margin-top: 0.5rem;
     color: #ffa03f;
   }
   .hero p {
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 1.5rem;
     font-weight: 500;
     word-spacing: 4px;
@@ -223,7 +223,7 @@ hr {
   .container {
     width: 70%;
     min-width: 250px;
-    margin: 20px auto;
+    margin: 30px auto;
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
