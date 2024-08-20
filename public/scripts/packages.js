@@ -75,7 +75,7 @@ searchButton.addEventListener("click", async (event) => {
   paginationPage.style.display = "none";
   try {
     const response = await axios.get(
-      `http://localhost:4000/api/package/filter`,
+      `https://travel-ticket-backend.onrender.com/api/package/filter`,
       {
         params: {
           location: locationSearch,
