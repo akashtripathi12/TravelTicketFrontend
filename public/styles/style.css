@@ -1511,6 +1511,11 @@ hr {
     width: 90%;
     background-color: aqua;
   }
+  .content h1 {
+    font-weight: 700;
+    font-size: 40px;
+    
+}
 }
 
 @media (max-width: 1080px) {
@@ -1604,13 +1609,17 @@ hr {
     width: auto;
     height: 140px;
     text-align: center;
-    font-size: 45px;
-    font-weight: 600;
+    font-size: 40px;
+    font-weight: 700;
     line-height: 75.4px;
   }
 }
 
 @media (max-width: 960px) {
+  .card_header h1 {
+    font-size: 36px;
+    
+}
   .main_content .right .column1 .card1 {
     width: 12.5rem;
     height: 16rem;
@@ -1709,7 +1718,7 @@ hr {
   }
   .desc_content h1 {
     margin-top: 0.5rem;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 700;
     line-height: 167%;
   }
@@ -1740,8 +1749,8 @@ hr {
     width: auto;
     height: 140px;
     text-align: center;
-    font-size: 45px;
-    font-weight: 600;
+    font-size: 36px;
+    font-weight: 700;
     line-height: 75.4px;
   }
   .content,
@@ -1902,7 +1911,7 @@ hr {
     padding-right: 0.4rem;
   }
   .trip_content h1 {
-    font-size: 2.2rem;
+    font-size: 34px;
     line-height: 137%;
   }
   .header,
@@ -2022,8 +2031,27 @@ hr {
   .first {
     margin-left: 0.1rem;
   }
+  .card_header h1 {
+    font-size: 34px;
+}
+.desc_content h1 {
+  
+  font-size: 34px;
+  
+}
+.content h1 {
+  font-size: 34px;
+
+}
+.card_header span {
+  font-size: 34px;
+}
 }
 @media (max-width: 765px) {
+  .trip_content h1 {
+    font-size: 32px;
+    line-height: 137%;
+}
   .main_content .right .column1 .card1 {
     width: 8rem;
     height: 12rem;
@@ -2194,6 +2222,19 @@ hr {
   .newsletter .content h1 {
     font-size: 25px;
   }
+  .trip_content h1 {
+    font-size: 28px;
+    line-height: 137%;
+}
+.card_header h1 {
+  font-size: 28px;
+}
+.card_header span {
+  font-size: 28px;
+}
+.desc_content h1 {
+  font-size: 28px;
+}
 }
 /*view change*/
 @media (max-width: 630px) {
@@ -2320,7 +2361,7 @@ hr {
     margin-left: -1rem;
   }
   .trip_content h1 {
-    font-size: 1.7rem;
+    font-size: 25px;
     line-height: 137%;
   }
   .header,
@@ -2354,10 +2395,10 @@ hr {
 
   .card_header h1 {
     margin-top: -10px;
-    font-size: 1.7rem;
+    font-size: 25px;
   }
   .card_header span {
-    font-size: 1.7rem;
+    font-size: 25px;
   }
   .wrapper {
     margin-top: -1rem;
@@ -2571,7 +2612,7 @@ hr {
   .desc_content #head {
     width: 270px;
     margin-top: 0.4rem;
-    font-size: 22px;
+    font-size: 25px;
     line-height: 137%;
   }
 
