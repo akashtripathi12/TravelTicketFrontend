@@ -92,7 +92,8 @@ main {
 .teamcard img {
   height: 10rem;
   width: 10rem;
-  background-color: #000;
+  object-fit: cover;
+  background-repeat: no-repeat;
   border-radius: 50%;
 }
 .teamcard p {
