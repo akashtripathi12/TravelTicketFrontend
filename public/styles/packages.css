@@ -56,6 +56,7 @@ main {
   border-radius: 30px;
   overflow: hidden;
 }
+
 .card img {
   object-fit: cover;
   width: 400px;
@@ -668,9 +669,15 @@ ul.main-nav {
     width: 100%;
   }
 }
-
+.error {
+  padding: 0 30px;
+  color: red;
+  margin: 7.5rem 0;
+}
 /* footer */
 .footer {
+  left: 0;
+  bottom: 0;
   width: 100%;
   color: #fff;
   background-color: rgba(255, 160, 63, 0.9);
@@ -751,6 +758,9 @@ ul.main-nav {
 
 /*responsive styles for footer*/
 @media (max-width: 800px) {
+  .error {
+    font-size: 20px;
+  }
   .footer {
     gap: 20px;
     padding-top: 90px;

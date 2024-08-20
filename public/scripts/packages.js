@@ -75,7 +75,7 @@ searchButton.addEventListener("click", async (event) => {
   paginationPage.style.display = "none";
   try {
     const response = await axios.get(
-      `https://travel-ticket-backend.onrender.com/api/package/filter`,
+      `http://localhost:4000/api/package/filter`,
       {
         params: {
           location: locationSearch,
@@ -91,9 +91,13 @@ searchButton.addEventListener("click", async (event) => {
 function renderSearchData(packages) {
   const packageList = document.querySelector(".row");
   packageList.innerHTML = "";
+  console.log(packages);
 
-  packages.forEach((packageItem) => {
-    const packageHtml = `
+  console.log(packages.length);
+
+  if (packages.length !== 0) {
+    packages.forEach((packageItem) => {
+      const packageHtml = `
         <a href="./package-detail.html?id=${packageItem._id}" class="listing-link">
           <div class="card">
             <img src="${packageItem.image.url}" class="card-img" alt="..."/>
@@ -107,10 +111,18 @@ function renderSearchData(packages) {
         </a>
       `;
 
-    const packageElement = document.createElement("div");
+      const packageElement = document.createElement("div");
+      packageElement.innerHTML = packageHtml;
+      packageList.appendChild(packageElement);
+    });
+  } else {
+    const packageHtml = `
+        <h1 class="error">Packages of Desired Location are <u>NOT AVALIABLE</u></h1>
+      `;
+    const packageElement = document.createElement("p");
     packageElement.innerHTML = packageHtml;
     packageList.appendChild(packageElement);
-  });
+  }
 }
 
 //pagination
